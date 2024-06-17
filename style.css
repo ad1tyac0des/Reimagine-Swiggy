@@ -1,3 +1,5 @@
+/* Boiler Plate */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,3 +11,63 @@ body {
     width: 100%;
     height: 100%;
 }
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+#landing-pg {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid rgb(221, 243, 23); */
+}
+
+/* Navbar Starts here */
+
+nav {
+    width: 100%;
+    height: 8%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+#logo {
+    font-family: 'Telma', cursive;
+    font-size: 50px;
+    color: rgba(255, 102, 0, 0.907);
+    padding-bottom: 6px;
+}
+
+#nav-icons {
+    /* background-color: #b33d3d; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#search-icon {
+    font-weight: lighter;
+    width: 35px;
+    height: 40px;
+    margin-right: 12px; /*Space bw search icon and menu icon*/
+    padding-top: 2px; 
+}
+
+/* #menu-icon{
+} */
+
+/* Navbar Ends Here */
+
+
+/* Hero Section Start Here */
+#hero-section {
+    width: 100%;
+    height: 92%;
+    background-color: #111;
+}
+
