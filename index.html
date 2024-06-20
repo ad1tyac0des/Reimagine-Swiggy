@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=telma@700,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,10 +35,23 @@
             </nav>
 
             <!-- Hero Section -->
-            <section id="hero-section">
-                
+            <section id="hero">
+                <video loop muted autoplay id="bg-video">
+                    <source src="cinematics.webm" type="video/mp4">
+                </video>
+
+                <div id="content">
+                    <h2 id="headline">Craving Something? </h2>
+                    <div id="btn-container">
+                        <span id="mask">ORDER NOW</span>
+                        <button>Order Now</button>
+                    </div>
+                </div>
             </section>
         </div>
+
+        <!-- Page-2 -->
+        <div id="page-2"></div>
 
     </main>
     <script src="script.js"></script>
