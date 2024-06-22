@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="menuStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -25,12 +27,41 @@
                         <line x1="15.7" y1="15.7" x2="22" y2="22" stroke="black" stroke-width="1"></line>
                     </svg>
 
-                    <!-- Menu Icon SVG -->
-                    <svg id="menu-icon" width="70" height="40" viewBox="0 0 24 24">
-                        <path
-                            d="M 2 5 L 2 6 L 22 6 L 22 5 L 2 5 z M 2 11 L 2 12 L 22 12 L 22 11 L 2 11 z M 2 17 L 2 18 L 22 18 L 22 17 L 2 17 z">
-                        </path>
-                    </svg>
+                    <!-- Menu Icon -->
+                    <div id="menu-icon" class="cursorScale">
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                    </div>
+                </div>
+
+                <!-- Menu Page  -->
+                <div id="menu-page">
+                    <!-- Cursor follower -->
+                    <div id="cursor">
+
+                    </div>
+
+                    <!-- Social-media Icons -->
+                    <div id="social-media-icons" class="cursorScale">
+                        <a href="https://x.com/Swiggy" target="_blank"><i class="ri-twitter-x-fill"></i> @swiggy</a>
+                        <a href="https://www.instagram.com/swiggyindia/" target="_blank"><i
+                                class="ri-instagram-line ig"></i> @swiggyindia</a>
+                        <a href="https://www.facebook.com/swiggy.in/" target="_blank"><i class="ri-facebook-fill"></i>
+                            @swiggy.in</a>
+                    </div>
+
+                    <!--Menu Items -->
+                    <div id="menu-items">
+                        <h3 class="cursorScale">Home</h3>
+                        <h3 class="cursorScale">Food</h3>
+                        <h3 class="cursorScale">Orders</h3>
+                        <h3 class="cursorScale">Restaurants</h3>
+                        <h3 class="cursorScale">Favorites</h3>
+                        <h3 class="cursorScale">sign in</h3>
+                        <h3 class="cursorScale">Contact</h3>
+
+                    </div>
                 </div>
             </nav>
 
@@ -62,6 +93,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    </main>
+    
+    <script src="menuScript.js"></script>
     <script src="script.js"></script>
 </body>
 
