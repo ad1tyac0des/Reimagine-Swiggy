@@ -8,7 +8,7 @@
     padding-left: 18px;
     z-index: 2;
     mix-blend-mode: difference;
-
+    cursor: pointer;
 }
 
 #menu-icon span {
