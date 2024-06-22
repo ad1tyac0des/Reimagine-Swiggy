@@ -52,11 +52,13 @@ main {
     /* border: 1px solid rgb(221, 243, 23); */
 }
 
+/* Page 1 Starts here */
+
 /* Navbar Starts here */
 
 nav {
     width: 100%;
-    height: 8%;
+    height: 8%; /* Height of navbar */
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -96,8 +98,9 @@ nav {
 
 /* Hero Section Start Here */
 #hero {
+    /* border: 1px solid rgb(225, 8, 8); */
     width: 100%;
-    height: 92%;
+    height:87%;  /* Height of bg video */
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
@@ -105,7 +108,6 @@ nav {
 }
 
 #bg-video{
-    /* border: 1px solid red; */
     position: absolute;
     top: 8%;
     left: 0;
@@ -126,30 +128,52 @@ nav {
     }
 }
 
+
 /* Contents inside Hero Section */
 
-#content {
-    border: 1px solid red;
+#content{
+    /* border: 1px solid  blue; */
+    height: 50%;
     width: auto;
-    height: 55%;
-    text-align: center;
-
+    /* display:flex;
+    align-items: center;
+    flex-direction: column;  */
 }
 
-#content #headline {
-    border: 1px solid rgb(50, 211, 21);
+#headline{
+    /* border: 1px solid  rgb(39, 238, 252); */
     font-family: gilroy;
-    font-weight: bolder;
+    font-size: 100px;
     color: #fff;
-    font-size: 90px;
-    line-height: 110px;
-    width: 90%;
-    margin: auto;
-    /* white-space: nowrap; */
+    text-align: center;
 }
 
+#btn-container{
+    /* border: 1px solid  rgb(0, 255, 51); */
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 
-/* Button Animation */
+#masked{
+    /* border: 1px solid red; */
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Text formatting */
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Animation for Button */
 @keyframes ani {
     from {
         mask-position: 0 0;
@@ -168,40 +192,17 @@ nav {
     }
 }
 
-#btn-container{
-    border: 1px solid rgb(208, 255, 0);
-    width: 255px;
-    height: 80px;
-    position: relative;
-    margin: 50px auto;
-}
-
-#btn-container #mask{
-    border: 1px solid rgb(0, 51, 255);
-    color: #ff0000;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-    font-family: General;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-#btn-container button {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #fff;
-    border-radius: 2px;
-    font-family: General;
-    font-size: 30px;
-    font-weight: bold;
+/* Designing button */
+#btn-container button{
+    border: none;
+    width: 250px;
+    height: 70px;
+    background-color: #fff;
+    color: #000;
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 34px;
     text-transform: uppercase;
-    color: #fff;
-    background-color: black;
-    /* padding: 20px 0; */
     mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
     mask-size: 7100% 100%;
     animation: ani2 0.7s steps(70) forwards;
@@ -209,14 +210,38 @@ nav {
 
 #btn-container button:hover{
     animation: ani 0.7s steps(70) forwards;
+    cursor: pointer;
 }
 
 /* Hero Section Ends Here */
+
+/* Bottom Strip Starts Here */
+#strip{
+    width: 100%;
+    height: 5%; /* 100 - (87 + 8) */
+    display:flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    font-size:2.4em;
+}
+
+
+#strip #marquee{
+    font-family: gilroy;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+
+/* Page 1 Ends here */
 
 
 
 #page-2{
     width: 100%;
     height: 100%;
-    background-color: salmon;
+    background-color: rgb(255, 255, 255);
 }
