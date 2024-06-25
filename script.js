@@ -25,3 +25,35 @@ gsap.from("#menu-icon", {
 })
 
 
+// Page-2 Animation
+
+// const tl = gsap.timeline()
+
+gsap.from("#page-2 #delicious-message", {
+    x: -1000,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#page-2",
+        scroller: "body",
+        // markers: true,
+        start: "0 center",
+        end: "center-=20 center",
+        scrub: 2,
+    }
+})
+
+gsap.from("#page-2 #menu-awaits", {
+    x: 1000,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#page-2",
+        scroller: "body",
+        // markers: true,
+        start: "0 30%",
+        end: "50% 50%",
+        scrub: 2, 
+        
+    }
+})
