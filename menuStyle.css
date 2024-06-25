@@ -6,7 +6,7 @@
     width: 70px;
     height: 40px;
     padding-left: 18px;
-    z-index: 2;
+    z-index: 5;
     mix-blend-mode: difference;
     cursor: pointer;
 }
@@ -50,11 +50,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0vw 7.5vw;
+
 }
 
 #menu-page.menu-open {
     transform: translateY(0%);
-    z-index: 1;
+    z-index: 4;
+ 
 }
 
 #menu-page #social-media-icons {
@@ -101,16 +103,16 @@
     color: white;
 }
 
-#menu-page #cursor {
+/* #menu-page #cursor {
     width: 20px;
     height: 20px;
     background-color: black;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
-}
+} */
 
 
 /* Responsivness Of Menu  Page */

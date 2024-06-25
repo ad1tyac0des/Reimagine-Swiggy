@@ -45,9 +45,19 @@ body{
 
 main {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
-
+#circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    pointer-events: none;
+    background-color: rgba(255, 132, 0, 0.7);
+}
 #landing-pg {
     width: 100%;
     height: 100%;
@@ -94,47 +104,53 @@ nav {
 /* Navbar Ends Here */
 
 /* Hero Section Start Here */
-#hero {
-    /* border: 1px solid rgb(225, 8, 8); */
+
+#hero{
+    position: relative;
+    /* border: 1px solid red; */
     width: 100%;
-    height:87%;  /* Height of bg video */
-    background-color: rgba(0, 0, 0, 0.4);
+    height: 87vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#bg-video{
+#video-container {
     position: absolute;
-    top: 8%;
+    top: 0;
     left: 0;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send video behind overlay and content */
 }
 
-@media (min-aspect-ratio:16/9) {
-    #bg-video {
-        width: 100%;
-        height: auto;
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* The video covers the container */
+}
+
+#overlay {
+    position: absolute;
+    /* border: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    position: relative;
+    /* border: 1px solid blue; */
+    z-index: 1; /* For having content above the video */
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 2000px) {
+    video {
+        width: 3500px;
     }
-}
-
-@media (max-aspect-ratio:16/9) {
-    #bg-video {
-        width: auto;
-        height: 100%;
-    }
-}
-
-
-/* Contents inside Hero Section */
-
-#content{
-    /* border: 1px solid  blue; */
-    height: 50%;
-    width: auto;
-    display:flex;
-    align-items: center;
-    flex-direction: column; 
 }
 
 #headline{
@@ -219,8 +235,8 @@ nav {
     display:flex;
     align-items: center;
     background-color: var(--primary-color);
-    overflow-x: hidden;
-    font-size:2.4em;
+    overflow: hidden;
+    font-size:2.4rem;
 }
 
 
@@ -240,7 +256,7 @@ nav {
 
 #page-2{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     display:flex;
     justify-content: center;

@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <main>
+    <main id="main">
+        <div id="circle"></div>
         <!-- Landing Page -->
         <div id="landing-pg">
 
@@ -39,9 +40,9 @@
                 <!-- Menu Page  -->
                 <div id="menu-page">
                     <!-- Cursor follower -->
-                    <div id="cursor">
+                    <!-- <div id="cursor">
 
-                    </div>
+                    </div> -->
 
                     <!-- Social-media Icons -->
                     <div id="social-media-icons" class="cursorScale">
@@ -68,10 +69,10 @@
 
             <!-- Hero Section -->
             <section id="hero">
-                <video loop muted autoplay id="bg-video">
-                    <source src="cinematics.webm" type="video/mp4">
-                </video>
-
+                <div id="video-container">
+                    <video src="cinematics.webm" autoplay loop muted></video>
+                </div>
+                <div id="overlay"></div>
                 <div id="content">
                     <h2 id="headline"><span style="color: #FC8019;">Craving</span> Something? </h2>
                     <div id="btn-container">
