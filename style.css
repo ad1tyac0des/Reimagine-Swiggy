@@ -242,3 +242,37 @@ nav {
     height: 100%;
     background-color: rgb(255, 255, 255);
 }
+
+/* Page 2 ends here  */
+
+/* Page 3 starts here  */
+
+#page-3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-items{
+    background-color: gray;
+    height: 20vh;
+    width: 15vw;
+    margin: 2vw;
+}
+
+.food-img{
+    width: 100%;
+}
+
+@media (max-width:700px) {
+    #page-3{
+        flex-direction: column;
+    }
+
+    .food-items{
+        width: 40vw;
+        height: 50vh;
+    }
+}

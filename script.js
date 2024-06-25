@@ -9,3 +9,9 @@ gsap.to("#marquee", {
         pin: true
     }
 })
+
+gsap.to(".food-items",{
+    margin:"5vw",
+    duration:2,
+    scrollTrigger:".food_items"
+})
