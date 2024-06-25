@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
@@ -12,7 +13,8 @@
 </head>
 
 <body>
-    <main>
+    <main id="main">
+        <div id="circle"></div>
         <!-- Landing Page -->
         <div id="landing-pg">
 
@@ -38,9 +40,9 @@
                 <!-- Menu Page  -->
                 <div id="menu-page">
                     <!-- Cursor follower -->
-                    <div id="cursor">
+                    <!-- <div id="cursor">
 
-                    </div>
+                    </div> -->
 
                     <!-- Social-media Icons -->
                     <div id="social-media-icons" class="cursorScale">
@@ -67,12 +69,12 @@
 
             <!-- Hero Section -->
             <section id="hero">
-                <video loop muted autoplay id="bg-video">
-                    <source src="cinematics.webm" type="video/mp4">
-                </video>
-
+                <div id="video-container">
+                    <video src="cinematics.webm" autoplay loop muted></video>
+                </div>
+                <div id="overlay"></div>
                 <div id="content">
-                    <h2 id="headline">Craving Something? </h2>
+                    <h2 id="headline">Craving Something?</h2>
                     <div id="btn-container">
                         <span id="masked">Order Now</span>
                         <button>Order Now</button>
@@ -86,10 +88,11 @@
             </div>
         </div>
 
-        <!-- Page-2 -->
+        <!-- Page-2-->
         <div id="page-2"></div>
 
-    </main>
+
+
 
     </main>
 
