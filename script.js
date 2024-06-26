@@ -10,8 +10,27 @@ gsap.to("#marquee", {
     }
 })
 
-gsap.to(".food-items",{
-    margin:"5vw",
+gsap.to(".burger",{
+    x:-450,
     duration:2,
-    scrollTrigger:".food_items"
+    scrollTrigger:".food-img"
 })
+
+gsap.to(".pizza",{
+    x:-150,
+    duration:2,
+    scrollTrigger:".food-img"
+})
+
+gsap.to(".main",{
+    x:150,
+    duration:2,
+    scrollTrigger:".food-img"
+})
+
+gsap.to(".momo",{
+    x:450,
+    duration:2,
+    scrollTrigger:".food-img"
+})
+

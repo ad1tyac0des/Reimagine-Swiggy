@@ -256,6 +256,8 @@ nav {
 }
 
 .food-items{
+    position:absolute;
+    right:40vw;
     background-color: gray;
     height: 20vh;
     width: 15vw;
