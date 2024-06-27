@@ -285,3 +285,74 @@ video {
     height: 100%;
     background-color: #242424;
 }
+
+/* Footer starts here  */
+footer{
+    font-size: 4vw;
+    height: 90vh;
+    background-color: #222222;
+    color: white;
+}
+
+.footer-top{
+    height: 10vh;
+    background-color: #161616;
+}
+
+
+.subscribe{
+   width: 30%;
+   margin-right: 3vw;
+}
+
+.services{
+    width: 25%;
+    margin-left: 3vw;
+}
+
+.contact{
+    width: 30%;
+    margin-left: 3vw;
+}
+
+.follow{
+    width: 20%;
+    margin-left: 3vw;
+}
+
+.footer-content{
+    padding: 5vw;
+    display: flex;
+}
+
+footer input{
+    padding: 1vw;
+    background-color: #222222;
+    border: 1px solid white;
+}
+
+footer .btn{
+    color: rgb(238, 238, 238);
+}
+
+footer span{
+    display: block;
+    font-size: 3vw;
+}
+
+footer .subscribe p{
+    font-size: 2vw;
+}
+
+.subscribe span{
+    font-size: 4vw;
+}
+
+.links{
+    color: rgb(186, 181, 181);
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+}
