@@ -10,27 +10,17 @@ gsap.to("#marquee", {
     }
 })
 
-gsap.to(".burger",{
-    x:-450,
-    duration:2,
-    scrollTrigger:".food-img"
-})
 
-gsap.to(".pizza",{
-    x:-150,
-    duration:2,
-    scrollTrigger:".food-img"
-})
+// Swiper Js Implement
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    // spaceBetween: 30,
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    }
+});
 
-gsap.to(".main",{
-    x:150,
-    duration:2,
-    scrollTrigger:".food-img"
-})
-
-gsap.to(".momo",{
-    x:450,
-    duration:2,
-    scrollTrigger:".food-img"
-})
 
