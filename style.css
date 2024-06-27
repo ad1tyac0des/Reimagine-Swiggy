@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: Telma;
-    src: url(Fonts/Telma-Bold.woff2);
+    src: url(Assets/Fonts/Telma-Bold.woff2);
 }
 
 @font-face {
     font-family: Poppins;
-    src: url(Fonts/Poppins-Bold.woff2);
+    src: url(Assets/Fonts/Poppins-Bold.woff2);
 }
 
 @font-face {
     font-family: Satoshi;
-    src: url(Fonts/Satoshi-Variable.woff2);
+    src: url(Assets/Fonts/Satoshi-Variable.woff2);
 }
 
 @font-face {
     font-family: General;
-    src: url(Fonts/GeneralSans-Bold.woff2);
+    src: url(Assets/Fonts/GeneralSans-Bold.woff2);
 }
 
 /* Color Variables */
@@ -240,7 +240,7 @@ nav {
 #page-2{
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(137, 125, 125);
 }
 
 /* Page 2 ends here  */
