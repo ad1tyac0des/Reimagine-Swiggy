@@ -326,8 +326,8 @@
 
 @media (min-width:2000px) {
     #btn-container button{
-        width: 350px;
-        height: 100px;
+        width: 300px;
+        height: 75px;
     }
     
     #menu-page {

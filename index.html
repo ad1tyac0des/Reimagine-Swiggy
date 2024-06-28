@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"   />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="menuStyle.css">
+    <title>ReImagine Swiggy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menuStyle.css">
 </head>
 
 <body>
     <main id="main">
         <div id="circle"></div>
-        <!-- Landing Page -->
+        <!-- Landing Page (Page-1) -->
         <div id="landing-pg">
 
             <!-- Navbar -->
             <nav>
                 <!-- Logo Text -->
-                <h1 id="logo">Swiggy</h1>
+                <h1 id="logo" class="text-gradient-fill-2">Swiggy</h1>
                 <div id="nav-icons">
                     <!-- Search Icon SVG -->
                     <svg id="search-icon" width="24" height="24" viewBox="0 0 24 24">
@@ -70,14 +70,17 @@
             <!-- Hero Section -->
             <section id="hero">
                 <div id="video-container">
-                    <video src="cinematics.webm" autoplay loop muted></video>
+                    <video src="Assets/Videos/cinematics.webm" autoplay loop muted></video>
                 </div>
                 <div id="overlay"></div>
                 <div id="content">
-                    <h2 id="headline"><span style="color: #FC8019;">Craving</span> Something? </h2>
+                    <h2 id="headline"><span class="text-gradient-fill-2">Craving</span> Something? </h2>
+                    <p id="headline-description">
+                        Swiggy brings your favorite meals from the best restaurants in town,
+                        straight to your door.</p>
                     <div id="btn-container">
-                        <span id="masked">Order Now</span>
-                        <button>Order Now</button>
+                        <span id="masked">Get Started</span>
+                        <button>Get Started</button>
                     </div>
                 </div>
             </section>
@@ -90,18 +93,131 @@
 
         <!-- Page-2 -->
         <div id="page-2">
-            <h1 id="delicious-message">Let's make it a <span style="color: #FC8019;">delicious</span> day!</h1>
-            <h1 id="menu-awaits">Our best <span style="color: #FC8019;">dishes</span> await you.</h1>
+            <div class="filler-box">
+                <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.196 37.0682L15.7074 23.0057L3.81818 30.5483L0.75 25.179L13.2784 18.6591L0.75 12.1392L3.81818 6.76989L15.7074 14.3125L15.196 0.25H21.3324L20.821 14.3125L32.7102 6.76989L35.7784 12.1392L23.25 18.6591L35.7784 25.179L32.7102 30.5483L20.821 23.0057L21.3324 37.0682H15.196Z"
+                        fill="black" />
+                </svg>
+            </div>
+            <div id="page-2-paras">
+                <h1 id="delicious-message">Let's make it a <span class="text-gradient-fill-2">delicious</span> day!</h1>
+                <h1 id="menu-awaits">Our best <span class="text-gradient-fill-1">dishes</span> await you.</h1>
+            </div>
+            
         </div>
 
         <!-- Page-3 -->
         <div id="page-3">
+            <h1>Swiggy’s Top Picks
+            </h1>
+            <hr>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <!-- 1st Slide -->
+                    <div class="swiper-slide">
+
+                        <div class="food-box-type-2 food-box">
+                            <img src="https://i.pinimg.com/564x/57/25/a8/5725a83b4ab6317ab79a563458e01d1d.jpg"
+                                alt="Pizza">
+                            <div class="card-text">
+                                <h3>Pasta</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-1 food-box">
+                            <img src="Assets/Images/momo.webp" alt="Momos">
+                            <div class="card-text">
+                                <h3>Momos</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-2 food-box">
+                            <img src="Assets/Images/pizza.webp" alt="Pizza">
+                            <div class="card-text">
+                                <h3>Pizza</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-1 food-box">
+                            <img src="Assets/Images/samosa.webp" alt="Samosa">
+                            <div class="card-text">
+                                <h3>Samosa</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-2 food-box">
+                            <img src="https://i.pinimg.com/564x/84/d1/cc/84d1ccdfa520f0440c80933c32ade894.jpg"
+                                alt="Momos">
+                            <div class="card-text">
+                                <h3>Burger</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Slide -->
+                    <div class="swiper-slide">
+                        <div class="food-box-type-2 food-box">
+                            <img src="https://i.pinimg.com/564x/57/25/a8/5725a83b4ab6317ab79a563458e01d1d.jpg"
+                                alt="Pizza">
+                            <div class="card-text">
+                                <h3>Pasta</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-1 food-box">
+                            <img src="Assets/Images/momo.webp" alt="Momos">
+                            <div class="card-text">
+                                <h3>Momos</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-2 food-box">
+                            <img src="Assets/Images/pizza.webp" alt="Pizza">
+                            <div class="card-text">
+                                <h3>Pizza</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-1 food-box"">
+                            <img src="Assets/Images/samosa.webp" alt="Samosa">
+                            <div class="card-text">
+                                <h3>Samosa</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+
+                        <div class="food-box-type-2 food-box"">
+                            <img src="https://i.pinimg.com/564x/84/d1/cc/84d1ccdfa520f0440c80933c32ade894.jpg"
+                                alt="Momos">
+                            <div class="card-text">
+                                <h3>Burger</h3>
+                                <h4>Buy</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd Slide End -->
+
+                </div>
+            </div>
+        </div>
 
         </div>
     </main>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="menuScript.js"></script>
     <script src="script.js"></script>
 </body>
