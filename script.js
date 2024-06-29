@@ -135,7 +135,8 @@ function swiperDishList() {
         speed: 2000,
         autoplay: {
             delay: 2500,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
         }
     })
 
@@ -145,8 +146,9 @@ swiperDishList()
 
 function page3HeadingAnimation(){
     gsap.from("#page-3 h1", {
-        y: 50,
+        y: 60,
         duration: 0.8,
+        delay: 0.6,
         opacity: 0,
         scrollTrigger:{
             trigger: "#page-3",
@@ -157,15 +159,15 @@ function page3HeadingAnimation(){
     })
     
     gsap.from("#page-3 hr", {
-        y: 50,
-        duration: 0.8,
-        delay: 0.2,
-        opacity: 0,
+        // y: 50,
+        width: 0,
+        duration: 2,
+        delay: 0.8,
         scrollTrigger:{
             trigger: "#page-3",
             scroller: "body",
             // markers: true,
-            start: "top 70%"
+            start: "top 70%",
         }
     })
 }
