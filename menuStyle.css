@@ -264,7 +264,7 @@
 }
 
 
-@media (min-width:1100px) and(max-width:1399px){
+@media (min-width:1100px) and (max-width:1399px){
 
     
     #btn-container button{
@@ -273,12 +273,13 @@
         height: 60px;
     }
     #menu-page {
+        border: 1px solid blue;
         padding: 0vw 10vw;
     }
 
-    #menu-items {
-        /* border: 1px solid red; */
-        justify-content: center;
+    #menu-items{
+       /* border: 1px solid red; */
+       justify-content: center;
     }
 
     #menu-items h3 {
