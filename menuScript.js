@@ -2,17 +2,20 @@ let main = document.querySelector("#main")
 let menuPage = document.querySelector("#menu-page");
 let menuIcon = document.querySelector("#menu-icon");
 let cursorScale = document.querySelectorAll(".cursorScale");
-let circle  = document.querySelector("#circle")
+let circle = document.querySelector("#circle")
+
 // {Adding cursor follower}
 
-main.addEventListener("mousemove",function(event){
-    gsap.to(circle,{
-        x:event.x,
-        y:event.y,
+main.addEventListener("mousemove", function (event) {
+    gsap.to(circle, {
+        x: event.x,
+        y: event.y,
         // duration:0.8,
-        ease:"sine",
-    
+        ease: "sine",
+
     })
+
+
 })
 
 // This function will execute when menuPage will open {Animating menuIcon through GSAP}
@@ -21,9 +24,10 @@ menuIcon.addEventListener("click", function () {
         menuPage.classList.toggle("menu-open");
         menuIcon.classList.toggle('menuIcon-open');
 
-        setTimeout(() => {
-            document.body.style.overflow = "hidden";
-        }, 1000)
+        // setTimeout(() => {
+        //    
+        // }, 1000)
+        document.body.style.overflow = "hidden";
         gsap.to("#menu-icon #span2", {
             x: 50,
             duration: 0.001,
@@ -61,13 +65,13 @@ menuIcon.addEventListener("click", function () {
                     duration: 0.8,
 
                 });
-                
+
             });
         });
-        circle.style.mixBlendMode ="difference"
-        circle.style.backgroundColor="white"
-        circle.style.height="20px"
-        circle.style.width="20px"
+        circle.style.mixBlendMode = "difference"
+        circle.style.backgroundColor = "white"
+        circle.style.height = "20px"
+        circle.style.width = "20px"
     }
 
     // When menuPage is closed this code will excute.
@@ -75,7 +79,7 @@ menuIcon.addEventListener("click", function () {
     else if (menuPage.classList.contains("menu-open")) {
         menuPage.classList.remove("menu-open");
         menuIcon.classList.remove("menuIcon-open");
-        
+
         document.body.style.overflowY = "";
         gsap.to("#menu-icon #span2", {
             x: 0,
@@ -91,12 +95,12 @@ menuIcon.addEventListener("click", function () {
             opacity: 0,
             duration: 0.1,
         })
-        
 
-        circle.style.mixBlendMode ="";
-        circle.style.height="";
-        circle.style.width="";
-        circle.style.backgroundColor=" rgb(255, 81, 0,0.7)"   
+
+        circle.style.mixBlendMode = "";
+        circle.style.height = "";
+        circle.style.width = "";
+        circle.style.backgroundColor = "rgb(0, 0, 0,0.7)"
     }
 });
 
