@@ -3,7 +3,7 @@ let menuPage = document.querySelector("#menu-page");
 let menuIcon = document.querySelector("#menu-icon");
 let cursorScale = document.querySelectorAll(".cursorScale");
 let circle = document.querySelector("#circle")
-// let foodBox = document.querySelector(".food-box")
+let foodBoxes = document.querySelectorAll(".food-box")
 // {Adding cursor follower}
 
 main.addEventListener("mousemove", function (event) {
@@ -14,8 +14,23 @@ main.addEventListener("mousemove", function (event) {
         ease: "sine",
     })
 
-    // -----------------
 })
+foodBoxes.forEach(foodBox => {
+    foodBox.addEventListener("mouseenter", function() {
+        circle.innerHTML = '<i class="ri-arrow-right-line"></i>'
+        gsap.to(circle, {
+            scale: 2,
+        });
+    });
+
+    foodBox.addEventListener("mouseleave", function() {
+        circle.innerHTML=""
+        gsap.to(circle, {
+            scale: 1,
+        });
+    });
+});
+
 
 // This function will execute when menuPage will open {Animating menuIcon through GSAP}
 menuIcon.addEventListener("click", function () {

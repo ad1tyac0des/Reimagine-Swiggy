@@ -135,7 +135,7 @@ function swiperDishList() {
         speed: 2000,
         autoplay: {
             delay: 2500,
-            disableOnInteraction: false,
+            pauseOnMouseEnter: true
         }
     })
 
