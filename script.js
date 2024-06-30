@@ -231,7 +231,7 @@ gsap.from("#aboutPart-1 h1",{
         // markers: true,
         start: 'top-=50% center',
         end: "bottom bottom",
-       
+       toggleActions: "play none none reverse"
     }
 })
 gsap.from("#paragraph p",{
@@ -245,7 +245,7 @@ gsap.from("#paragraph p",{
         // markers: true,
         start: 'top-=50% center',
         end: "bottom bottom",
-       
+       toggleActions: "play none none reverse"
     }
 })
 tl.from(aboutImg1, {
@@ -275,3 +275,22 @@ tl.from(aboutImg2,{
         end: "bottom bottom",
     }
 })
+
+// Footer starts now
+
+function copyrightAnimation(){
+    gsap.from("#copyright", {
+        y: 30,
+        opacity: 0.5,
+        duration: 0.4,
+        scrollTrigger:{
+            trigger: "#copyright",
+            scroller: "body",
+            // markers: true,
+            start: "bottom bottom",
+            toggleActions: "play none none reverse"
+        }
+    })
+    
+}
+copyrightAnimation()
