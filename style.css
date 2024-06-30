@@ -388,6 +388,7 @@ video {
     /* border: 1px solid rgb(9, 255, 0); */
     font-family: General;
     font-size: 110px;
+    /* font-size: 5.7vw; */
     padding: 0 100px;
     align-content: center;
     height: 16vh;
@@ -497,3 +498,7 @@ video {
     object-fit: cover;
     object-position: center;
 }
+
+/* Page 3 ends here */
+
+/* Page 4 Starts Here */
