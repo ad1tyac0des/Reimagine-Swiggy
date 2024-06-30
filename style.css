@@ -24,6 +24,7 @@
     font-family: Lexend;
     src: url(Assets/Fonts/LexendGiga-Regular.woff2);
 }
+
 /* Color Variables */
 
 :root {
@@ -54,14 +55,14 @@ main {
     height: auto;
 }
 
-.text-gradient-fill-1{
+.text-gradient-fill-1 {
     background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.text-gradient-fill-2{
+.text-gradient-fill-2 {
     background: linear-gradient(210deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -69,7 +70,7 @@ main {
 }
 
 
-#circle{
+#circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -83,8 +84,9 @@ main {
     text-align: center;
     align-content: center;
 }
-#circle i{
-   transition: 0.3s;
+
+#circle i {
+    transition: 0.3s;
 }
 
 #landing-pg {
@@ -134,7 +136,7 @@ nav {
 
 /* Hero Section Start Here */
 
-#hero{
+#hero {
     position: relative;
     /* border: 1px solid red; */
     width: 100%;
@@ -151,13 +153,15 @@ nav {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Send video behind overlay and content */
+    z-index: -1;
+    /* Send video behind overlay and content */
 }
 
 video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* The video covers the container */
+    object-fit: cover;
+    /* The video covers the container */
 }
 
 #overlay {
@@ -171,7 +175,8 @@ video {
 #content {
     position: relative;
     /* border: 1px solid blue; */
-    z-index: 1; /* For having content above the video */
+    z-index: 1;
+    /* For having content above the video */
     text-align: center;
     color: white;
 }
@@ -182,7 +187,7 @@ video {
     }
 }
 
-#headline{
+#headline {
     /* border: 1px solid  rgb(39, 238, 252); */
     font-family: gilroy;
     /* font-size: 100px; */
@@ -209,7 +214,7 @@ video {
     transform: scaleX(1)
 }
 
-#headline-description{
+#headline-description {
     /* border: 1px solid blue; */
     padding: 10px 40px 20px 6px;
     text-align: center;
@@ -228,8 +233,8 @@ video {
     margin-top: 50px;
 }
 
-#masked{
-    position: absolute; 
+#masked {
+    position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
@@ -243,10 +248,11 @@ video {
     text-transform: uppercase;
     color: #fff;
 
-    pointer-events: none;  /* This allows clicks to pass through to the button */
+    pointer-events: none;
+    /* This allows clicks to pass through to the button */
 }
 
-.button-wrapper{
+.button-wrapper {
     width: 250px;
     height: 70px;
     border-radius: 7px;
@@ -290,7 +296,7 @@ video {
     animation: ani2 1s steps(70) forwards;
 }
 
-.button-wrapper button:hover{
+.button-wrapper button:hover {
     animation: ani 1s steps(70) forwards;
     cursor: pointer;
 }
@@ -300,13 +306,13 @@ video {
 /* Bottom Strip Starts Here */
 #strip {
     width: 100%;
-    height:5.1%;
+    height: 5.1%;
     /* 100 - (87 + 8) */
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
     overflow: hidden;
-    font-size:2.4rem;
+    font-size: 2.4rem;
     /* border: 2px solid green; */
 }
 
@@ -329,34 +335,34 @@ video {
     /* border: 2px solid rgb(9, 16, 214); */
     width: 100%;
     height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
 }
 
-#page-2-paras{
+#page-2-paras {
     /* border: 2px solid rgb(0, 255, 60); */
     height: 65vh;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#page-2 h1{
+#page-2 h1 {
     /* border: 1px solid red; */
     font-family: Poppins;
     white-space: nowrap;
     font-size: 6.7vw;
 }
 
-#page-2-paras :nth-child(2){
+#page-2-paras :nth-child(2) {
     text-align: right;
     padding-right: 10px;
 }
 
-.filler-box{
+.filler-box {
     background-color: rgb(237, 237, 237);
     width: 100px;
     height: 100px;
@@ -379,7 +385,7 @@ video {
     width: 100%;
     height: 100vh;
     background-color: rgb(233, 233, 233);
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -398,7 +404,7 @@ video {
     color: transparent;
 }
 
-#page-3 hr{
+#page-3 hr {
     width: 80%;
     margin: 0 0 90px 90px;
 }
@@ -436,7 +442,7 @@ video {
     transition: 0.5s;
 }
 
-.food-box:hover{
+.food-box:hover {
     scale: 1.1
 }
 
@@ -501,4 +507,118 @@ video {
 
 /* Page 3 ends here */
 
-/* Page 4 Starts Here */
+/* Page4 Starts Here */
+#flavor-profile {
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#flavor-profile h1 {
+    font-size: 3.7vw;
+    font-family: General;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+#flavor-profile hr {
+    width: 50%;
+    /* margin: 0 0 90px 90px; */
+}
+#flavor-profile #flavorPt1 {
+    /* border: 1px solid green; */
+    /* padding-top: 50px; */
+    width: auto;
+    height: 100%;
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #flavorPt1 .flavors {
+    border: 1px solid red;
+} */
+
+.flavors img {
+    /* border: 1px solid black; */
+    width: 70px;
+    height: 70px;
+}
+.flavors img:hover{
+    transform: rotate(-22deg);
+}
+
+.flavors #spicy {
+    width: 80px;
+}
+
+.flavors .flavorMeter {
+    background-color: rgb(196, 196, 196);
+    border-radius:9px;
+    width: 50px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+.flavors:hover img{
+    transform: rotate(-22deg);
+}
+
+.flavorMeter .flavor-progress {
+    /* height: 40%; */
+    background: linear-gradient(180deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
+    position: absolute;
+    bottom: 0;
+    border-radius:9px;
+    width: 50px;
+    
+}
+
+.flavorMeter #flavor-progress1 {
+    height: 60%;
+
+}
+
+.flavorMeter #flavor-progress2 {
+    height: 50%;
+}
+
+.flavorMeter #flavor-progress3 {
+    height: 25%;
+
+}.flavorMeter #flavor-progress4 {
+    height: 35%;
+  
+}
+
+
+.flavors p {
+    /* border:1px solid red; */
+    text-align: center;
+    font-family: Gilroy;
+    /* letter-spacing: -2px; */
+    font-size: 20px;
+
+}
+
+.flavors #flavour-para1 {
+    color: red;
+}
+
+.flavors #flavour-para2 {
+    color: rgb(255, 51, 123);
+}
+
+.flavors #flavour-para3 {
+    color: rgb(255, 166, 0);
+}
+
+.flavors #flavour-para4 {
+    color: rgb(60, 42, 36);
+}
+
+/* Page4 Ends Here */

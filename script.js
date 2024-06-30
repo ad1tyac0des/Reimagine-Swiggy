@@ -171,3 +171,47 @@ function page3HeadingAnimation(){
     })
 }
 page3HeadingAnimation()  
+
+//---------> Page-4 Animation
+let flavorProgress = document.querySelectorAll(".flavor-progress");
+
+
+gsap.from("#flavor-profile h1",{
+    y:30,
+    duration:1,
+    opacity:0,
+    scrollTrigger:{
+        trigger:'#flavor-profile h1',
+        scroller:"body",
+        // markers:true,
+        start:"top-=150% center",
+        end:"bottom bottom",
+        toggleActions:"play none none reverse",
+    }
+})
+gsap.from("#flavor-profile hr",{
+    width: 0,
+    duration: 1,
+    delay: 0.8,
+    scrollTrigger:{
+        trigger: "#flavor-profile",
+        scroller: "body",
+        // markers: true,
+        start: "top 70%",
+        toggleActions:"play none none reverse"
+    }
+})
+
+gsap.from(flavorProgress,{
+    height:0,
+    // delay:6,
+    duration:2,
+    scrollTrigger:{
+        trigger:'.flavorMeter',
+        scroller:"body",
+        // markers:true,
+        start:"top-=100% top",
+        end:"bottom bottom",
+        toggleActions:"play none none reverse",
+    }
+})
