@@ -57,3 +57,23 @@ gsap.from("#page-2 #menu-awaits", {
         
     }
 })
+
+
+// Footer starts now
+
+function copyrightAnimation(){
+    gsap.from("#copyright", {
+        y: 30,
+        opacity: 0.5,
+        duration: 0.4,
+        scrollTrigger:{
+            trigger: "#copyright",
+            scroller: "body",
+            // markers: true,
+            start: "bottom bottom",
+            toggleActions: "play none none reverse"
+        }
+    })
+    
+}
+copyrightAnimation()
