@@ -38,9 +38,10 @@ menuIcon.addEventListener("click", function () {
         menuPage.classList.toggle("menu-open");
         menuIcon.classList.toggle('menuIcon-open');
 
-        setTimeout(() => {
-            document.body.style.overflow = "hidden";
-        }, 1000)
+        // setTimeout(() => {
+        //    
+        // }, 1000)
+        document.body.style.overflow = "hidden";
         gsap.to("#menu-icon #span2", {
             x: 50,
             duration: 0.001,
@@ -113,7 +114,7 @@ menuIcon.addEventListener("click", function () {
         circle.style.mixBlendMode = "";
         circle.style.height = "";
         circle.style.width = "";
-        circle.style.backgroundColor = "rgba(32, 32, 32, 0.8)"
+        circle.style.backgroundColor = "rgb(0, 0, 0,0.7)"
     }
 });
 
