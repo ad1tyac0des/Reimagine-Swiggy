@@ -53,7 +53,7 @@
     }
 
     #page-2 h1 {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         font-size: 7vw;
         letter-spacing: -1px;
         word-spacing: -1px;
@@ -71,9 +71,7 @@
     }
 
     #line2 {
-
         top: 97%;
-
     }
 
 }
@@ -109,7 +107,8 @@
     #masked {
         font-size: 2.3vw;
     }
-    #strip{
+
+    #strip {
         display: none;
     }
 
@@ -131,9 +130,9 @@
     }
 
     #our-resturant h1 {
-        top: 50px;
-        left: 0px;
-        transform: rotate(0deg);
+        /* top: 0; */
+        left: -150px;
+        transform: rotate(90deg) translateX(20px);
         font-size: 9vw;
     }
 
@@ -174,6 +173,7 @@
         top: 200px;
         left: 0px;
         width: 100%;
+        opacity: 0.85;
     }
 
     #resturant-img2 {
@@ -231,13 +231,16 @@
         font-size: 4vw;
     }
 
-    #resturant-page {
+    /* #resturant-page {
         height: 210vh;
-    }
+    } */
 
     #our-resturant h1 {
         top: 70px;
-        font-size: 8vw;
+        font-size: 10vw;
+        letter-spacing: 3vw;
+        left: -240px;
+        transform: rotate(90deg) translateX(250px);
     }
 
     #resturant-img2 {
@@ -269,9 +272,9 @@
         font-size: 30px;
     }
 
-    #resturant-page {
-        height: 250vh;
-    }
+    /* #resturant-page {
+        height: 0vh;
+    } */
     #resturant-img2 {
         top: 1300px;
     }

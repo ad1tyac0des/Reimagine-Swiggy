@@ -535,7 +535,7 @@ video {
     position: relative;
     /* align-content: center; */
     /* background: #0a0a0a; */
-    background:  linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
+    background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
     /* width: 800px; */
     width: 43vw;
     height: 850px;
@@ -602,7 +602,7 @@ video {
     top: 110%;
     left: 60px;
     border-radius: 5px;
-    background:  linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
+    background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
     border: none;
     color: white;
     font-family: General;
@@ -613,6 +613,7 @@ video {
     cursor: pointer;
     transition: 0.8s;
 }
+
 #resturant-btn:hover {
     transform: translateX(5px);
     letter-spacing: 4px;
