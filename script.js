@@ -94,7 +94,7 @@ function fillerAnimation() {
 
     let tl = gsap.timeline()
     tl.to(".filler-box", {
-        y: screenHeight-boxHeight-50,
+        y: screenHeight - boxHeight - 50,
         duration: 0.5,
         rotate: 720,
         scrollTrigger: {
@@ -115,7 +115,7 @@ function fillerAnimation() {
             trigger: ".filler-box",
             scroller: "body",
             // markers: true,
-            start: "650px 60%", 
+            start: "650px 60%",
             end: "900px 20%",
             scrub: 2,
         }
@@ -130,39 +130,51 @@ fillerAnimation()
 function swiperDishList() {
     var swiper = new Swiper(".swiper", {
         slidesPerView: 1,
-        // spaceBetween: 240,
         loop: true,
-        speed: 2000,
+        speed: 1000,
         autoplay: {
-            delay: 2500,
-            pauseOnMouseEnter: true
-        }
-    })
-
+            delay: 500,
+            // pauseOnMouseEnter: true
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        },
+    });
 }
-swiperDishList()
+swiperDishList();
 
 
-function page3HeadingAnimation(){
+function page3HeadingAnimation() {
     gsap.from("#page-3 h1", {
         y: 60,
         duration: 0.8,
         delay: 0.6,
         opacity: 0,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: "#page-3",
             scroller: "body",
             // markers: true,
             start: "top-=2% 70%"
         }
     })
-    
+
     gsap.from("#page-3 hr", {
         // y: 50,
         width: 0,
         duration: 2,
         delay: 0.8,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: "#page-3",
             scroller: "body",
             // markers: true,
@@ -170,42 +182,42 @@ function page3HeadingAnimation(){
         }
     })
 }
-page3HeadingAnimation()  
+page3HeadingAnimation()
 
 //---------> Page-4 Animation
 gsap.to("#resturant-img1", {
     scrollTrigger: {
         trigger: "#resturant-page",
-        scroller:"body",
-        start: "top-=200px top", 
+        scroller: "body",
+        start: "top-=200px top",
         end: "bottom-=200px center",
-        scrub: true, 
+        scrub: true,
         // markers:true,
-      },
-      backgroundPositionY: "-50%" 
+    },
+    backgroundPositionY: "-50%"
 });
 
 gsap.to("#resturant-img2", {
-  scrollTrigger: {
-    trigger: "#resturant-page",
-    scroller:"body",
-    start: "top top",
-    end: "bottom top",
-    scrub: true,
-  },
-  y: -300 
+    scrollTrigger: {
+        trigger: "#resturant-page",
+        scroller: "body",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+    },
+    y: -300
 });
 
 gsap.to("#our-resturant h1", {
     scrollTrigger: {
-      trigger: "#resturant-page",
-      scroller:"body",
-      start: "top top", 
-      end: "bottom top", 
-      scrub: true,
+        trigger: "#resturant-page",
+        scroller: "body",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
     },
-    y: -200 
-  });
+    y: -200
+});
 
 
 // About Page Animation
@@ -213,9 +225,9 @@ let tl = gsap.timeline();
 const aboutImg1 = document.querySelector("#part2-img1");
 const aboutImg2 = document.querySelector("#part2-img2");
 
-gsap.from("#aboutPart-1 h1",{
-    y:35,
-    opacity:0,
+gsap.from("#aboutPart-1 h1", {
+    y: 35,
+    opacity: 0,
     duration: 1,
     scrollTrigger: {
         trigger: "#aboutPart-1 h1",
@@ -223,26 +235,26 @@ gsap.from("#aboutPart-1 h1",{
         // markers: true,
         start: 'top-=50% center',
         end: "bottom bottom",
-       toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse"
     }
 })
-gsap.from("#paragraph p",{
-    y:30,
-    opacity:0,
-    duration:0.5,
-    stagger:0.8,
+gsap.from("#paragraph p", {
+    y: 30,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.8,
     scrollTrigger: {
         trigger: "#paragraph p",
         scroller: "body",
         // markers: true,
         start: 'top-=50% center',
         end: "bottom bottom",
-       toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse"
     }
 })
 tl.from(aboutImg1, {
     x: 1300,
-    rotate:-45,
+    rotate: -45,
     duration: 2,
     scrollTrigger: {
         trigger: aboutImg1,
@@ -250,32 +262,32 @@ tl.from(aboutImg1, {
         // markers: true,
         start: 'top+=30% center',
         end: "bottom bottom",
-        scrub:1
+        scrub: 1
     }
 });
 
-tl.from(aboutImg2,{
-    x:800,
-    rotate:-8,
-    duration:2,
-    scrollTrigger:{
-        trigger:aboutImg2,
-        scroller:'body',
+tl.from(aboutImg2, {
+    x: 800,
+    rotate: -8,
+    duration: 2,
+    scrollTrigger: {
+        trigger: aboutImg2,
+        scroller: 'body',
         // markers:true,
-        scrub:1,
-        start:"top-=70% center",
+        scrub: 1,
+        start: "top-=70% center",
         end: "bottom bottom",
     }
 })
 
 // Footer starts now
 
-function copyrightAnimation(){
+function copyrightAnimation() {
     gsap.from("#copyright", {
         y: 30,
         opacity: 0.5,
         duration: 0.4,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: "#copyright",
             scroller: "body",
             // markers: true,
@@ -283,7 +295,7 @@ function copyrightAnimation(){
             toggleActions: "play none none reverse"
         }
     })
-    
+
 }
 copyrightAnimation()
 

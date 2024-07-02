@@ -4,6 +4,7 @@ let menuIcon = document.querySelector("#menu-icon");
 let cursorScale = document.querySelectorAll(".cursorScale");
 let circle = document.querySelector("#circle")
 let foodBoxes = document.querySelectorAll(".food-box")
+let footer = document.querySelector(".footer")
 // {Adding cursor follower}
 
 main.addEventListener("mousemove", function (event) {
@@ -15,21 +16,39 @@ main.addEventListener("mousemove", function (event) {
     })
 
 })
+
 foodBoxes.forEach(foodBox => {
-    foodBox.addEventListener("mouseenter", function() {
+    foodBox.addEventListener("mouseenter", function () {
         circle.innerHTML = '<i class="ri-arrow-right-line"></i>'
         gsap.to(circle, {
             scale: 2,
         });
     });
 
-    foodBox.addEventListener("mouseleave", function() {
-        circle.innerHTML=""
+    foodBox.addEventListener("mouseleave", function () {
+        circle.innerHTML = ""
         gsap.to(circle, {
             scale: 1,
         });
     });
 });
+
+
+footer.addEventListener("mousemove", function (event) {
+    gsap.to(circle, {
+        x: event.x,
+        y: event.y,
+        // duration:0.8,
+        ease: "sine",
+
+    })
+    circle.style.backgroundColor = "white"
+
+})
+footer.addEventListener("mouseleave", function () {
+    circle.style.backgroundColor = "rgb(0, 0, 0,0.7)"
+})
+
 
 
 // This function will execute when menuPage will open {Animating menuIcon through GSAP}
