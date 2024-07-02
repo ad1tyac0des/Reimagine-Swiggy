@@ -412,6 +412,8 @@ video {
 #page-3 hr {
     width: 80%;
     margin: 0 60px;
+    border: none;
+    border-top: 1px solid #000;
 }
 
 .swiper {
@@ -556,7 +558,7 @@ video {
 
 #our-resturant h1 {
     position: absolute;
-    top: 100px;
+    top: 300px;
     left: -200px;
     font-size: 65px;
     font-family: General;
@@ -581,10 +583,10 @@ video {
 }
 
 #resturant-Pt1 #bullet {
-    width: 30px;
+    width: 15px;
     height: 15px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 #resturant-Pt1 #line1 {

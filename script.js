@@ -189,7 +189,7 @@ gsap.to("#resturant-img1", {
     scrollTrigger: {
         trigger: "#resturant-page",
         scroller: "body",
-        start: "top-=200px top",
+        start: "top-=200px 20%",
         end: "bottom-=200px center",
         scrub: true,
         // markers:true,
@@ -218,6 +218,31 @@ gsap.to("#our-resturant h1", {
     },
     y: -200
 });
+
+gsap.from("#bullet", {
+    x:-30,
+    opacity:0,
+    duration: 0.6,
+    scrollTrigger:{
+        trigger: "#bullet",
+        scroller: "body",
+        // markers: true,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+    }
+})
+
+gsap.from("#line1", {
+    width: 0,
+    duration: 0.6,
+    scrollTrigger:{
+        trigger: "#bullet",
+        scroller: "body",
+        // markers: true,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+    }
+})
 
 
 // About Page Animation
