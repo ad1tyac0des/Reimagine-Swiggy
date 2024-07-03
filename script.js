@@ -314,12 +314,6 @@ tl.from(aboutImg2, {
 
 // Footer starts now
 
-gsap.to(".footer-section a", {
-    x: -30,
-    duration: 1,
-    delay: 3,
-})
-
 function copyrightAnimation() {
     gsap.from("#copyright", {
         y: 30,
