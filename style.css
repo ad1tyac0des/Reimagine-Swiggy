@@ -688,6 +688,9 @@ video {
 
 }
 
+#aboutPart-1 #about-context{
+    display: none;
+}
 #aboutPart-1 h1 {
     /* border: 1px solid red; */
     /* display: inline; */
@@ -700,6 +703,9 @@ video {
     background-clip: text;
     color: transparent;
 }
+#aboutPart-1 h1 span{
+    display: none;
+}
 
 #aboutPart-1 #paragraph {
     /* border: 1px solid green; */
@@ -710,7 +716,7 @@ video {
 }
 
 #paragraph p {
-    font-size: 17px;
+    font-size: clamp(14px, 2vw, 18px);
     margin-top: 20px;
     color: #000000;
     font-weight: 100;
@@ -718,6 +724,7 @@ video {
 }
 
 #about-page #aboutPart-2 {
+    position: relative;
     /* background-color: rgb(237, 138, 255); */
     width: 60vw;
     height: 100%;
@@ -741,6 +748,7 @@ video {
 }
 
 #part2-img2 {
+    /* border: 1px solid red; */
     position: absolute;
     right: 0;
     width: 500px;
@@ -751,7 +759,7 @@ video {
     background-size: cover;
     object-fit: cover;
     align-self: end;
-
+    rotate: 0deg;
 }
 
 #about-footer {
