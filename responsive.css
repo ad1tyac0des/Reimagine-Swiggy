@@ -1,12 +1,41 @@
+@media (min-width:2000px) {
+
+    #about-page {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid blue; */
+        width: 100vw;
+        height: 150vh;
+        padding: 3vw 10vw;
+        margin-top: 300px;
+    }
+
+    #about-page #aboutPart-1 {
+        /* background-color: rgb(172, 172, 255); */
+        width: 800px;
+        height: 100%;
+    }
+
+    #about-page #aboutPart-2 {
+        /* position: relative; */
+        /* background-color: rgb(237, 138, 255); */
+        width: 900px;
+        height: 100%;
+    }
+
+}
+
 @media (max-width:2500px) {
 
     .button-wrapper {
-        width: 300px;
+        /* width: 900px; */
         height: 70px;
         border-radius: 7px;
         overflow: hidden;
     }
+
 }
+
 
 @media (max-width:1800px) {
     .button-wrapper {
@@ -24,6 +53,16 @@
         font-size: 1.5vw;
     }
 
+    #about-page {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid blue; */
+        width: 100vw;
+        height: 150vh;
+        /* padding: 3vw 10vw; */
+        margin-top: 300px;
+    }
+
 }
 
 @media (max-width:1500px) {
@@ -33,6 +72,7 @@
         border-radius: 7px;
         overflow: hidden;
     }
+
 
 }
 
@@ -72,7 +112,61 @@
 
     #line2 {
         top: 97%;
+
     }
+
+    #about-page {
+        /* border: 1px solid red; */
+        flex-direction: column;
+        height: 200vh;
+        padding: 3vw 10vw;
+       
+    }
+
+    #about-page #aboutPart-1 {
+        /* border: 1px solid blue; */
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    #aboutPart-1 h1 {
+        font-size: 7vw;
+        /* border: 2px solid black; */
+        text-align: center;
+        width: 100%;
+    }
+    #aboutPart-1 #paragraph {
+        /* border: 1px solid green; */
+        width: 100%;
+        /* margin-top: 40px; */
+        position: static;
+    
+    }
+    
+    #about-page #aboutPart-2 {
+        /* position: relative; */
+        /* border: 1px solid green; */
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    #part2-img1 {
+        /* border: 1px solid blue; */
+        position:static;
+        /* right:-1200px; */
+        width: 600px;
+        height: 500px;
+    }
+    
+    #part2-img2 {
+        /* border: 1px solid red; */
+        position: static;
+        /* right: 0; */
+        width: 500px;
+        height: 300px;
+    
+    }
+
 
 }
 
@@ -234,9 +328,84 @@
     #line2 {
         display: none;
     }
+    #about-page {
+        flex-direction: column;
+        height: auto;  
+        
+    }
+    #aboutPart-1 #about-context{
+        display: block;
+        font-size: 2.2vw;
+        font-family:Gilroy;
+        font-weight: 500;
+        /* letter-spacing: -1px; */
+        color: rgb(105, 105, 105);
+    }
+    #aboutPart-1 h1{
+        border-bottom: 2px solid rgb(187, 187, 187);
+        display: inline;
+        /* letter-spacing: 3px; */
+        transition: 0.5s;
+    }
+    #aboutPart-1 h1 span{
+        /* border: 1px solid red; */
+        display: inline;
+     
+    }
+    #aboutPart-1 hr {
+        display: none;
+    }
+    #aboutPart-1 #paragraph {
+        /* border: 1px solid green; */
+        display: none;
+    
+    }
+    #aboutPart-2{
+        margin-top: 30px;
+    }
+    #part2-img1 {
+        /* border: 1px solid blue; */
+        position:relative;
+        left: 100px;
+        /* right:-1200px; */
+        width: 70vw;
+        height: 60vw;
+        /* display: none; */
+        rotate: -15deg;
+    }
+    #part2-img2 {
+        /* border: 1px solid red; */
+        position: static;
+        /* right: 0; */
+        width: 70vw;
+        height: 26vw;
+    
+    }
 
     #about-footer p {
         font-size: 14px;
+    }
+    #about-footer button {
+        color: white;
+        border: none;
+        background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
+        width: 180px;
+        width: 22vw;
+        height: 55px;
+        font-family: satoshi;
+        font-size: 18px;
+        font-size: 2.2vw;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 5px;
+        /* mix-blend-mode: difference; */
+        /* background-color: #242424; */
+        transition: 0.8s;
+    }
+    
+    #about-footer button:hover {
+        transform: translateX(5px);
+        letter-spacing: 1px;
     }
 
 }
@@ -268,7 +437,8 @@
     }
 
     #resturant-page {
-        height: 230vh;
+        /* border: 1px solid red; */
+        height: 220vh;
     }
 
     #our-resturant h1 {
@@ -283,6 +453,52 @@
         top: 1300px;
         height: 600px;
 
+    }
+    #about-page{
+        /* border: 1px solid blue; */
+        margin-top: 50px;
+    }
+    #aboutPart-1 #about-context{
+        display: block;
+        font-size: 3vw;
+        font-family:Gilroy;
+        font-weight: 500;
+        /* letter-spacing: -1px; */
+        color: rgb(105, 105, 105);
+    }
+    #aboutPart-1 h1{
+        border-bottom: 2px solid white;
+        display: inline;
+        /* letter-spacing: 3px; */
+        font-size: 10vw;
+        transition: 0.5s;
+    }
+    #part2-img1 {
+        /* border: 1px solid blue; */
+        position:relative;
+        left: 0px;
+        /* right:-1200px; */
+        width: 600px;
+        /* display: none; */
+        rotate: -15deg;
+    }
+    #part2-img2 {
+        /* border: 1px solid red; */
+        position: relative;
+        /* right: 0; */
+        width: 600px;
+        height: 250px;
+        rotate: 15deg;
+    }
+    #about-footer button {
+        width: 180px;
+        height: 50px;
+        font-size: 3.2vw;
+    }
+    
+    #about-footer button:hover {
+        transform: translateX(5px);
+        letter-spacing: 1px;
     }
 }
 
@@ -314,5 +530,15 @@
 
     #resturant-img2 {
         top: 1300px;
+    }
+    #about-footer button {
+        width: 100px;
+        height: 35px;
+        font-size: 3.2vw;
+    }
+    
+    #about-footer button:hover {
+        transform: translateX(5px);
+        letter-spacing: 1px;
     }
 }
