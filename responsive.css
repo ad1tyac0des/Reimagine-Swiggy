@@ -112,6 +112,36 @@
         display: none;
     }
 
+    #page-2{
+        position: relative;
+        height: 1%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+    }
+    
+    #page-2-paras{
+        /* border: 2px solid rgb(0, 38, 255); */
+        height: 30vh;
+        margin-bottom: 15vh;
+    }
+
+    #page-2-paras h1{
+        /* border: 2px solid rgb(255, 0, 204); */
+        font-size: 7vw;
+    }
+
+    .filler-box{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .filler-box svg{
+        width: 20px;
+        height: 22px;
+    }
+
     #page-3 h1 {
         font-size: 8.8vw;
     }
@@ -205,7 +235,9 @@
         display: none;
     }
 
-
+    #about-footer p {
+        font-size: 14px;
+    }
 
 }
 
@@ -244,7 +276,7 @@
         font-size: 10vw;
         letter-spacing: 3vw;
         left: -240px;
-        transform: rotate(90deg) translateX(250px);
+        transform: rotate(90deg) translateX(370px);
     }
 
     #resturant-img2 {

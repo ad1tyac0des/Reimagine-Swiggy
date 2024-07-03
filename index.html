@@ -11,9 +11,92 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menuStyle.css">
     <link rel="stylesheet" href="responsive.css">
+    <style>
+        #loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%); */
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .preloader {
+            width: 80%;
+            max-width: 80vw;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 1px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .preloader-bar {
+            width: 0;
+            height: 100%;
+            background: #4e4e4e;
+            transition: width 0.5s ease;
+        }
+
+        .loading-text {
+            text-align: center;
+            color: #313131;
+            font-size: 18px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: gilroy;
+            font-weight: bolder;
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
+            border-radius: 50%;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader-container" class="container">
+        <div class="particles" id="particles"></div>
+        <div class="preloader">
+            <div class="preloader-bar" id="preloader-bar"></div>
+        </div>
+        <div class="loading-text" id="loading-text">Loading 0%</div>
+    </div>
+
     <main id="main">
         <!-- Cursor follower -->
         <div id="circle"></div>
@@ -249,29 +332,29 @@
                 <div class="footer-section">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Swiggy One</a></li>
-                        <li><a href="#">Swiggy Instamart</a></li>
-                        <li><a href="#">Swiggy Genie</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">About</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Careers</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Team</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Swiggy One</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Swiggy Instamart</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Swiggy Genie</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Contact us</h3>
                     <ul>
-                        <li><a href="#">Help & Support</a></li>
-                        <li><a href="#">Partner with us</a></li>
-                        <li><a href="#">Ride with us</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Help & Support</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Partner with us</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Ride with us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Legal</h3>
                     <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Terms & Conditions</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Cookie Policy</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Privacy Policy</a></li>
+                        <li><a href="#" onclick="event.preventDefault();">Investor Relations</a></li>
                     </ul>
                 </div>
             </div>
@@ -289,18 +372,19 @@
                 </select>
             </div>
             <div class="social-media">
-                <a href="#" aria-label="Twitter">
+                <a href="https://x.com/Swiggy" aria-label="Twitter" target="_blank">
                     <i class="ri-twitter-x-fill"></i>
                 </a>
-                <a href="#" aria-label="Instagram">
+                <a href="https://www.instagram.com/swiggyindia/" aria-label="Instagram" target="_blank">
                     <i class="ri-instagram-line ig"></i>
                 </a>
-                <a href="#" aria-label="Facebook">
+                <a href="https://www.facebook.com/swiggy.in/" aria-label="Facebook" target="_blank">
                     <i class="ri-facebook-fill"></i>
                 </a>
             </div>
             <div class="footer-bottom">
-                <p id="copyright">&copy; 2024 <span style="color: lime;">Renaissance Minds</span></p>
+                <p id="copyright">&copy; 2024 <span style="color: lime; border-bottom: 1px solid lime;">Renaissance
+                        Minds</span></p>
                 <p>Serving delicious experiences across 589+ cities</p>
             </div>
         </div>
@@ -311,6 +395,52 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="menuScript.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.width = `${Math.random() * 10 + 5}px`;
+                particle.style.height = particle.style.width;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                particle.style.animationDelay = `${Math.random() * 2}s`;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        function updateLoader() {
+            const preloaderBar = document.getElementById('preloader-bar');
+            const loadingText = document.getElementById('loading-text');
+            const loaderContainer = document.getElementById('loader-container');
+            let progress = 0;
+
+            const interval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress > 100) progress = 100;
+
+                preloaderBar.style.width = `${progress}%`;
+                loadingText.textContent = `Loading ${Math.round(progress)}%`;
+
+                if (progress === 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        loaderContainer.style.display = 'none';
+                    }, 1000);
+                }
+            }, 200);
+        }
+
+        window.addEventListener('load', () => {
+            createParticles();
+            updateLoader();
+        });
+    </script>
 </body>
 
 </html>

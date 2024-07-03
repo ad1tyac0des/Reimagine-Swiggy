@@ -558,7 +558,7 @@ video {
 
 #our-resturant h1 {
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: -200px;
     font-size: 65px;
     font-family: General;
@@ -770,6 +770,7 @@ video {
 #about-footer p {
     font-size: 18px;
     font-family: satoshi;
+    opacity: 0.5;
 }
 
 #about-footer button {

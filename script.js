@@ -33,6 +33,7 @@ function menuIconAnimation() {
 menuIconAnimation()
 
 
+// _______________________________________________________
 function marqueeAnimation() {
     let stripWidth = document.querySelector("#strip").offsetWidth
     let marqueeWidth = document.querySelector("#marquee").offsetWidth
@@ -50,6 +51,9 @@ function marqueeAnimation() {
     })
 }
 marqueeAnimation()
+
+
+// _______________________________________________________
 
 
 //--------> Page-2 Animation
@@ -94,7 +98,7 @@ function fillerAnimation() {
 
     let tl = gsap.timeline()
     tl.to(".filler-box", {
-        y: screenHeight - boxHeight - 50,
+        y: screenHeight - boxHeight - 70,
         duration: 0.5,
         rotate: 720,
         scrollTrigger: {
@@ -165,7 +169,8 @@ function page3HeadingAnimation() {
             trigger: "#page-3",
             scroller: "body",
             // markers: true,
-            start: "top-=2% 70%"
+            start: "top-=2% 70%",
+            toggleActions: "play none none reverse"
         }
     })
 
@@ -173,12 +178,13 @@ function page3HeadingAnimation() {
         // y: 50,
         width: 0,
         duration: 2,
-        delay: 0.8,
+        delay: 0.7,
         scrollTrigger: {
             trigger: "#page-3",
             scroller: "body",
             // markers: true,
             start: "top 70%",
+            toggleActions: "play none none reverse"
         }
     })
 }
@@ -212,8 +218,9 @@ gsap.to("#our-resturant h1", {
     scrollTrigger: {
         trigger: "#resturant-page",
         scroller: "body",
-        start: "top top",
-        end: "bottom top",
+        // markers: true,
+        start: "top 50%",
+        end: "bottom -10%",
         scrub: true,
     },
     y: -200
@@ -306,6 +313,12 @@ tl.from(aboutImg2, {
 })
 
 // Footer starts now
+
+gsap.to(".footer-section a", {
+    x: -30,
+    duration: 1,
+    delay: 3,
+})
 
 function copyrightAnimation() {
     gsap.from("#copyright", {
