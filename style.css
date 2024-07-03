@@ -25,9 +25,47 @@
     src: url(Assets/Fonts/LexendGiga-Regular.woff2);
 }
 
+/* --->Gilroy Fonts */
 @font-face {
-    font-family: Lexend;
-    src: url(Fonts/LexendGiga-Regular.woff2);
+    font-family: 'gilroy';
+    src: url('Assets/Fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Assets/Fonts/Gilroy-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Assets/Fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Assets/Fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Assets/Fonts/Gilroy-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Assets/Fonts/Gilroy-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
 }
 
 /* Color Variables */
@@ -688,9 +726,10 @@ video {
 
 }
 
-#aboutPart-1 #about-context{
+#aboutPart-1 #about-context {
     display: none;
 }
+
 #aboutPart-1 h1 {
     /* border: 1px solid red; */
     /* display: inline; */
@@ -703,7 +742,8 @@ video {
     background-clip: text;
     color: transparent;
 }
-#aboutPart-1 h1 span{
+
+#aboutPart-1 h1 span {
     display: none;
 }
 
