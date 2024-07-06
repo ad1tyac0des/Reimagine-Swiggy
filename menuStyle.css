@@ -22,7 +22,7 @@
 }
 
 .menuIcon-open span:nth-child(1) {
-    transform: translateY(12px) rotate(45deg);
+    transform: translateY(12.5px) rotate(45deg);
 }
 
 .menuIcon-open span:nth-child(2) {
@@ -162,7 +162,6 @@
 }
 
 @media (max-width:499px) {
-
     #menu-items h3 {
         font-size: 11vw;
         line-height: 13vw;
@@ -177,28 +176,32 @@
     }
 
     #menu-icon {
-        /* border: 1px solid black; */
+        /* border: 1px solid rgb(255, 63, 63); */
         /* top: -15px; */
         width: 70px;
-        height: 30px;
+        height: 40px;
     }
-
     #menu-icon span {
-        margin: 6px 0px;
+        display: block;
+        height: 2px;
+        width: 33px;
+        background-color: rgb(255, 255, 255);
+        margin: 8px 0px;
+        transition: 0.2s ease-in-out;
+    
     }
-
-    .menuIcon2-open span:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
+    
+    .menuIcon-open span:nth-child(1) {
+        transform: translateY(12.5px) rotate(45deg);
     }
-
-    .menuIcon2-open span:nth-child(2) {
+    
+    .menuIcon-open span:nth-child(2) {
         opacity: 0;
     }
-
-    .menuIcon2-open span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
+    
+    .menuIcon-open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
     }
-
 
 }
 
@@ -237,7 +240,7 @@
 
 @media (min-width:1100px) and (max-width:1399px){
     #menu-page {
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         padding: 0vw 10vw;
     }
 

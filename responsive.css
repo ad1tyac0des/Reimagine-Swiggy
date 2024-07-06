@@ -35,8 +35,6 @@
     }
 
 }
-
-
 @media (max-width:1800px) {
     .button-wrapper {
         width: 230px;
@@ -52,19 +50,16 @@
     #masked {
         font-size: 1.5vw;
     }
-
     #about-page {
         display: flex;
         justify-content: space-between;
-        /* border: 1px solid blue; */
+        /* border: 1px solid rgb(0, 102, 255); */
         width: 100vw;
         height: 150vh;
         /* padding: 3vw 10vw; */
         margin-top: 300px;
     }
-
 }
-
 @media (max-width:1500px) {
     .button-wrapper {
         width: 200px;
@@ -247,6 +242,7 @@
         padding: 0px 0px;
         width: 100%;
         height: 250vh;
+        /* border: 1px solid red; */
     }
 
     #our-resturant {
@@ -317,20 +313,26 @@
     }
 
     #resturant-btn {
-        top: 152%;
-        left: 70px;
+        /* border: 1px solid black; */
+        top: 149%;
+        left:0px;
+        width: 80%;
         margin: auto;
-        width: 70vw;
-        height: 50px;
-
+        text-align: center;
     }
+    #resturant-btn  button{
+        width: 100%;
+    }
+
 
     #line2 {
         display: none;
     }
     #about-page {
+        /* border: 1px solid blue; */
         flex-direction: column;
         height: auto;  
+        margin-top: 20px;
         
     }
     #aboutPart-1 #about-context{
@@ -386,6 +388,7 @@
         font-size: 14px;
     }
     #about-footer button {
+     
         color: white;
         border: none;
         background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
@@ -456,7 +459,7 @@
     }
     #about-page{
         /* border: 1px solid blue; */
-        margin-top: 50px;
+        margin-top: 0px;
     }
     #aboutPart-1 #about-context{
         display: block;
@@ -526,11 +529,16 @@
 
     #resturant-page {
         height: 280vh;
+        /* border: 1px solid red; */
     }
 
     #resturant-img2 {
         top: 1300px;
     }
+    #about-page{
+        /* border: 1px solid blue; */
+        margin-top: 0px;
+    } 
     #about-footer button {
         width: 100px;
         height: 35px;

@@ -647,11 +647,14 @@ video {
 }
 
 #resturant-btn {
-    width: 240px;
-    height: 50px;
+    /* border:1px solid black; */
     position: relative;
     top: 110%;
     left: 60px;
+    width: 100%;
+    height: 50px;
+}
+#resturant-btn button{
     border-radius: 5px;
     background: linear-gradient(90deg, rgba(238, 67, 20, 1) 0%, rgba(238, 93, 20, 1) 32%, rgba(255, 115, 0, 1) 85%);
     border: none;
@@ -663,9 +666,10 @@ video {
     letter-spacing: 3px;
     cursor: pointer;
     transition: 0.8s;
+    width: 240px;
+    height: 50px;
 }
-
-#resturant-btn:hover {
+#resturant-btn button:hover {
     transform: translateX(5px);
     letter-spacing: 4px;
 }
